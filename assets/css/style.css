@@ -19,6 +19,10 @@
     src: url(./../fonts/CinzelDecorative-Black.ttf);
 }
 @font-face{
+    font-family: cinzelBdFont;
+    src: url(./../fonts/CinzelDecorative-Bold.ttf);
+}
+@font-face{
     font-family: arabicFont;
     src: url(./../fonts/GE_Hili_Book.otf);
 }
@@ -36,8 +40,9 @@ header h2 {
     font-family: merriBoldFont;
 }
 header .header-en h2{
-    font-size: 30px;
-    font-family: cinzelFont;
+    font-size: 35px;
+    line-height: 45px;
+    font-family: cinzelBdFont;
 }
 header .header-en h2 sup{
     font-family: cinzelFont;
@@ -53,7 +58,8 @@ header .header-en h2 .span2, header .header-en .h4{
 }
 header .header-ar h2{
     font-family: arabicFont;
-    font-size: 35px;
+    font-size: 45px;
+    line-height: 45px;
     font-weight: bold;
     color: #ed1d24;
 }
@@ -249,7 +255,7 @@ footer a.btn-danger{
 
 /* start media query */
 @media only screen and (max-width: 1199px) {
-    header .header-ar h2 {
+    header .header-en h2 {
         font-size: 30px;
     }
 }
@@ -258,13 +264,13 @@ footer a.btn-danger{
         display: none;
     }
     header .header-ar h2{
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 35px;
+        line-height: 35px;
         font-weight: normal;
     }
     header .header-en h2{
-        font-size: 20px !important;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 35px;
     }
     header .header-en h2 sup {
         font-size: 20px;
